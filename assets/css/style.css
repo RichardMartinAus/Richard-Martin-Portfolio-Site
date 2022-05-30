@@ -1,0 +1,269 @@
+:root {
+--teal: #2C698D;
+--orange: #EF6D27;
+--yellow: #F4D52B;
+--darkgray: #808080;
+}
+
+/* HEADER STYLING */
+header {
+    min-height: 100px;
+    max-width: 100%;
+    background-image: linear-gradient(60deg, var(--teal) 60%, var(--orange), var(--yellow));
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px 30px 0px 30px
+    }
+
+header h1 {
+    font-size: 250%;
+    color: white;
+    text-shadow: 5px 5px 5px #34383a96;
+    padding-top: 50px;
+}
+
+/* NAV STYLING */
+li {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 125%;
+    color: white;
+    margin: 0px 0px 0px 15px;
+    text-shadow: 2px 2px 2px #34383a96;
+}
+
+/* THIS UNDERLINE EFFECT WAS CREATED BY Vlad Cazacu ON STACK OVERFLOW. Link: https://stackoverflow.com/questions/40242378/underline-from-left-to-right-on-hover-in-and-out */
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 0;
+    bottom: -3px;
+    background: white;
+    height: 3px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+  
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+/* HERO IMAGE STYLING */
+#heroimage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* MAIN BODY STYLING */
+main section {
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 175%;
+    color: var(--darkgray);
+    text-align: right;
+}
+
+p {
+    color: var(--darkgray);
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+section {
+    display: flex;
+}
+
+#headshot {
+    max-height: 300px;
+    padding-right: 40px;
+}
+
+article {
+    display: flex;
+    min-width: 85%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+aside {
+    padding-right: 30px;
+    border-right: solid 2px var(--darkgray);
+    min-width: 15%;
+    justify-content: right;
+}
+
+/* WORK IMAGES STYLING */
+figure {
+    display: flex;
+    flex: 0 0 100%;
+    height: 600px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.fullbox a {
+    background-color: rgb(61, 61, 61);
+    border: solid 8px var(--teal);
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.topbox {
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.topbox:hover {
+    opacity: 1;
+    transition: 100ms ease-in;
+}
+
+.halfboxes a {
+    background-color: rgb(61, 61, 61);
+    border: solid 8px var(--teal);
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.halfboxes {
+    height: 300px;
+    display: flex;
+    flex: 0 0 49%
+}
+
+.bottombox {
+    opacity: 0.5;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.bottombox:hover {
+    opacity: 1;
+    transition: 100ms ease-in;
+}
+
+.work-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figcaption {
+    z-index: 1;
+    background-color: var(--orange);
+    color: white;
+    padding: 15px;
+    height: fit-content;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-weight: 600;
+    font-size: 130%;
+    border-radius: 0px 10px 0px 0px;
+    text-shadow: 2px 2px #34383a65;
+}
+
+.captionsmall {
+    font-size: 70%;
+    font-weight: 300;
+}
+
+
+
+/* CONTACT STYLING */
+#contactme li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 110%;
+    color: var(--darkgray);
+}
+
+#contactme a {
+    color: var(--darkgray);
+}
+
+i {
+    padding-right: 4px;
+}
+
+#contactme a:hover {
+    border-bottom: solid 3px var(--yellow);
+    transition: 0.3s;
+}
+
+/* FOOTER STYLING */
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 80%;
+
+}
+
+/* MEDIA QUERIES FOR DIFFERENT VIEWPORT SIZES */
+/* TABLET SCREENS */
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    aside {
+        border-right: none;
+        border-bottom: solid 2px var(--darkgray);
+        margin-bottom: 10px;
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    header h1 {
+        padding-top: 20px;
+    }
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 480px) {
+    #headshot {
+        max-height: 180px;
+        padding-right: 20px;
+    }
+
+    figcaption {
+        max-width: 150px;
+        line-height: 0.9;
+    }
+}
