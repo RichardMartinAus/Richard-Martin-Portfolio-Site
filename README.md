@@ -10,7 +10,7 @@ I've tried to add some personal touches to the site, including vector artwork th
 
 The work section will become populated with real, deployed apps as they are built. Currently only one of the apps is live and deployed, so placeholders have been used to simulate the final layout.
 
-Here's a link to the deployed site: https://richardmartinaus.github.io/richard-martin-portfolio-site/  
+Here's a link to the deployed site: [https://richardmartinaus.github.io/richard-martin-portfolio-site/](https://richardmartinaus.github.io/Richard-Martin-Portfolio-Site/) 
 
 Below is a screenshot of the deployed page.
 
