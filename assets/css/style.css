@@ -1,3 +1,4 @@
+/* Global colours */
 :root {
 --teal: #2C698D;
 --orange: #EF6D27;
@@ -234,6 +235,14 @@ footer {
         padding-right: 20px;
     }
 
+    h2 {
+        font-size: 140%;
+    }
+    
+    p {
+        font-size: 90%;
+    }
+
     figcaption {
         max-width: 150px;
         line-height: 0.9;
@@ -241,5 +250,41 @@ footer {
 
     #contactme li {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 200%;
+    }
+
+    nav a {
+        font-size: 100%;
+    }
+
+    figcaption {
+        max-width: 130px;
+    }
+
+    #contactme li {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header h1 {
+        font-size: 175%;
+    }
+
+    nav a {
+        font-size: 80%;
+    }
+
+    figcaption {
+        max-width: 110px;
+    }
+
+    .captionsmall {
+        font-size: 60%;
     }
 }
